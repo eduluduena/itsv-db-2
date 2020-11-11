@@ -1,0 +1,50 @@
+3-Write examples with string	
+
+SET nombre Edu	
+GET nombre	
+
+4-Write examples with hashes	
+
+HMSET pelicula name "toy story" description "pelicula de juguetes" likes 1	
+HGETALL pelicula	
+
+5-Write examples with Lists	
+
+LPUSH flia agus	
+LPUSH flia jorge	
+LPUSH flia tomi	
+
+6-Write examples with Sets	
+
+SADD autos ferrari	
+SADD autos dodge  	
+SADD autos camaro	
+SADD autos fiat	
+solo muestra 3 porque es una lista de valores unicos	
+
+7-Write examples with Sorted Sets	
+
+ZADD comidas 3 pan	
+ZADD comidas 2 sandwich	
+ZADD comidas 1 queso	
+
+ZRANGE comidas 0 10 WITHSCORES	
+
+8-Write examples using Publish Subscribe	
+
+SUBSCRIBE canal1	
+PUBLISH canal1 "hello"	
+
+9-Write examples using Transactions	
+
+MULTI	
+SET chat meme	
+GET chat	
+EXEC 	
+
+10 - Investigate backups	
+Se usa para guardar la base de datos	
+
+11 - Investigate Benchmarks - Run some	
+ redis-benchmark -n 100000	
+ Es para testear performance
