@@ -3,7 +3,7 @@
 INSERT
 	INTO
 	customer (store_id, first_name, last_name, email, address_id, active , last_update)
-VALUES(1, 'Lorenzo', 'Grasso', 'lolito@gmail.com',(
+VALUES(1, 'Eduardo', 'Ludueña', 'edufeli22@gmail.com',(
 SELECT
 	MAX(address_id)
 from
